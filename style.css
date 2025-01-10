@@ -1,60 +1,76 @@
-body{
-    margin: 0px;
-    box-sizing: border-box;
+body {
+  margin: 0px;
+  box-sizing: border-box;
 }
-.container{
-    display: flex;
-    border-color: grey;
-    
 
+.container {
+  display: flex;
+  border-color: grey;
+  /* height: 100vh; */
 }
-.art{
-    display: flex;
-
+.art {
+  display: flex;
 }
-.splash{
-   max-width: 33vw;
-    height: 100vh;
+.splash {
+  max-width: 33vw;
+  height: 100vh;
 }
 .banner {
-    position: absolute;
-    top: 30%;
-    height: 15vh;
-    display: flex;
-    background-color: rgba(15, 15, 15, .5);
+  position: absolute;
+  top: 30%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  width: 33vw;
+  background-color: rgba(15, 15, 15, 0.5);
+  color: white;
+}
+
+.brand {
+  font-size: 4em;
+  align-self: center;
+  font-family: Iceland;
+}
+
+.signup {
+margin: 3vw; 
+}
+
+.shadow{
+    box-shadow: 0px 5px 10px rgb(40 114 52);    
+}
+
+h1 {
+  display: block;
+  height: 33vh;
+  text-align: center;
+  justify-self: center;
+  font-size: 3.5em;
+  font-family: Iceland, sans-serif;
+  margin-bottom: 0px;
+}
+
+input,
+label,
+#submit {
+  display: block;
+  font-size: 1.75em;
+}
+.float {
+  float: left;
+  margin-right: 15%;
+  margin-top: 1%;
+}
+.create {
+  opacity: 0;
+}
+#submit {
+    background-color: rgb(40 114 52);
+    font-size: 2.1em;
     color: white;
+    border-radius: 5%;
 }
 
-.brand{
-   font-size: 4em;
-   display: flex;
-   align-items: center;
-}
-.signup{
-    margin: 3vw;
-}
-h1{
-    display: flex;
-    flex-wrap: wrap;
-    height: 33vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    height: 33vh;
-
-}
-input{
-    display: flex;
-
-}
-
-div{
+/* div{
     border: 1px solid red;
-}
+} */
