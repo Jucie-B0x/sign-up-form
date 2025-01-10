@@ -5,52 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+  />
   <link rel="stylesheet" href="style.css" />
   <body>
     <div class="container">
       <div class="art">
-          <img class="splash"
-            src="pexels-jeremy-mosley-1347619-3086736.jpg"
-            alt="water fall"
-          />
-          <div class="banner">  
+        <img
+          class="splash"
+          src="pexels-jeremy-mosley-1347619-3086736.jpg"
+          alt="water fall"
+        />
+        <div class="banner">
           <div class="brand">Juice-B0x</div>
-            <img class="logo" src="codelogo.png" alt="logo" />
+          <img class="logo" src="codelogo.png" alt="logo" />
         </div>
       </div>
-
       <div class="signup">
         <h1>
-          This is not a real website! Now's the time to start your new
+          <span style="color: rgb(40 114 52)">THIS IS NOT A REAL WEBSITE!</span> Now's the time to start your new
           adventure! Enter your details below to begin!
         </h1>
         <div class="form">
-          <form action="signup.form">
-            <h2>Here we go!</h2>
-            <section>
-              <label for="fname">First name</label>
-              <input type="text" name="first-name" id="fname" />
-              <label for="lname">Last name</label>
-              <input type="text" name="last-name" id="lname" />
-              <label for="email">email</label>
-              <input type="email" name="email" id="email" />
+          <form action="signup.form" >
+            <h2>The time is now!</h2>
+            <!-- <section> -->
+              <div class="float">
+                <label for="fname">First name</label>
+                <input type="text" name="first-name" id="fname" required/>
+              </div>
+              <div class="float">
+                <label for="lname">Last name</label>
+                <input type="text" name="last-name" id="lname" required/>
+              </div>
+            <!-- </section> -->
+ 
+             
+            <!-- <section> -->
+              <div class="float">
+                <label for="email">Email</label>
+              <input type="email" name="email" id="email" required/> 
+            </div>
+            <div class="float">
               <label for="phone">Phone number</label>
-              <input type="tel" name="phone" id="phone" />
-              <label for="password1">Password</label>
-              <input type="text" name="pass" id="password1" />
+              <input type="tel" name="phone" id="phone" required/>
+            </div>
+            <!-- </section> -->
+           
+            <!-- <section>     -->
+              <div class="float">
+                <label for="password1">Password</label>
+              <input type="text" name="pass" id="password1" required/>
+            </div>
+            <div class="float">
               <label for="confirm">Confirm password</label>
-              <input type="text" name="pass" id="confirm" />
-              <label for="submit">Create account</label>
-              <input
-                type="button"
-                name="create"
-                id="submit"
-                value="Create account"
-              />
-            </section>
+              <input type="text" name="pass" id="confirm" required/>
+            </div>
+            <!-- </section> -->
+            <!-- <section>  -->
+              <div class="float">
+              <label class="create" for="submit">Create account</label>
+              <button id="submit">Create account</button>
+              </div>
+            <!-- </section> -->
           </form>
         </div>
       </div>
     </div>
   </body>
 </html>
+`
