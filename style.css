@@ -33,6 +33,7 @@ body {
   top: 30%;
   height: 15vh;
   display: flex;
+  flex: 1 1 auto;
   width:33%;
   justify-content: center;
   background-color: rgba(15, 15, 15, 0.5);
